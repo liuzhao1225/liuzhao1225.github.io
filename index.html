@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>刘朝 Zhao Liu（黑纹白斑马）｜AI、开源工具与 Bilibili 创作者</title>
-    <meta name="description" content="刘朝（Zhao Liu），Bilibili 创作者黑纹白斑马、GitHub 开发者 liuzhao1225、X 用户 liuzhao_666。关注 AI agents、Codex、开源 macOS 工具、实时语音与数字媒体。">
-    <meta name="keywords" content="刘朝,Zhao Liu,黑纹白斑马,liuzhao1225,liuzhao_666,AI agents,Codex,开源工具,Bilibili,GitHub">
+    <meta name="description" content="刘朝（Zhao Liu），Bilibili 创作者黑纹白斑马、GitHub 开发者 liuzhao1225、X 用户 liuzhao_666。YouDub、Codex Account Switcher、Claudex 与 Remember Me 的作者。">
+    <meta name="keywords" content="刘朝,Zhao Liu,黑纹白斑马,liuzhao1225,liuzhao_666,YouDub,AI 视频本地化,Codex Account Switcher,Claudex,数字遗产,AI agents,Bilibili,GitHub">
     <meta name="author" content="刘朝 Zhao Liu">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <link rel="canonical" href="https://liuzhao1225.github.io/">
@@ -44,13 +44,32 @@
           "digital media",
           "Bilibili"
         ],
-        "owns": {
-          "@type": "SoftwareApplication",
-          "name": "Codex Account Switcher",
-          "url": "https://liuzhao1225.github.io/codex-account-switcher/",
-          "applicationCategory": "DeveloperApplication",
-          "operatingSystem": "macOS"
-        }
+        "owns": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "YouDub WebUI",
+            "url": "https://github.com/liuzhao1225/YouDub-webui",
+            "applicationCategory": "MultimediaApplication"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Codex Account Switcher",
+            "url": "https://liuzhao1225.github.io/codex-account-switcher/",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "macOS"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Claudex",
+            "url": "https://github.com/liuzhao1225/claudex",
+            "applicationCategory": "DeveloperApplication"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Remember Me",
+            "url": "https://github.com/liuzhao1225/remember-me.ai"
+          }
+        ]
       }
     </script>
     <style>
@@ -347,6 +366,38 @@
         font-size: 15px;
       }
 
+      .section-label {
+        margin: 86px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 720;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+
+      .platforms {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin: -36px 0 92px;
+      }
+
+      .platform {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 22px 24px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.48);
+        text-decoration: none;
+        font-weight: 680;
+      }
+
+      .platform span { color: var(--muted); font-size: 13px; font-weight: 560; }
+      .platform:hover { border-color: var(--blue); background: var(--white); }
+
       footer {
         border-top: 1px solid var(--line);
         padding: 30px 0 42px;
@@ -370,6 +421,7 @@
         .manifesto p { margin-left: 0; }
         .routes { grid-template-columns: 1fr; margin: 62px 0; }
         .route { min-height: 280px; }
+        .platforms { grid-template-columns: 1fr; margin-top: -18px; }
         .footer-row { flex-direction: column; }
       }
 
@@ -387,7 +439,7 @@
         <a class="wordmark" href="#top">刘朝 <small>ZHAO LIU UNIVERSE</small></a>
         <div class="nav-links">
           <a href="#about">关于</a>
-          <a href="#places">坐标</a>
+          <a href="#projects">项目</a>
           <a href="https://github.com/liuzhao1225">GitHub ↗</a>
         </div>
       </nav>
@@ -400,7 +452,7 @@
           <h1 id="hero-title">刘朝<span>ZHAO LIU</span></h1>
           <p class="lede">同一个人，几个观察世界的窗口。写 AI 与代码，做开源工具，也以“黑纹白斑马”持续制作和整理数字内容。</p>
           <div class="hero-links">
-            <a class="pill primary" href="https://github.com/liuzhao1225">查看开源项目</a>
+            <a class="pill primary" href="#projects">查看代表项目</a>
             <a class="pill" href="https://x.com/liuzhao_666">阅读英文动态</a>
             <a class="pill" href="https://space.bilibili.com/1263732318">进入 Bilibili</a>
           </div>
@@ -411,32 +463,39 @@
           <span class="orbit-tag">GitHub · liuzhao1225</span>
           <span class="orbit-tag">X · @liuzhao_666</span>
           <span class="orbit-tag">Bilibili · 1263732318</span>
-          <span class="orbit-tag">Open source · Codex</span>
+          <span class="orbit-tag">Open source · YouDub</span>
         </div>
       </section>
 
       <section class="manifesto shell" id="about">
-        <h2>从 <em>AI agents</em> 到实时语音，从 macOS 工具到百万人的视频空间。</h2>
-        <p>刘朝（Zhao Liu）关注 Codex、Claude Code、中国前沿模型、实时语音与数字媒体。GitHub 上的 liuzhao1225、X 上的 @liuzhao_666，以及 Bilibili 的“黑纹白斑马”均为同一创作者。</p>
+        <h2>从 <em>AI agents</em> 到视频本地化，从 macOS 工具到百万人的内容空间。</h2>
+        <p>刘朝（Zhao Liu）关注 Codex、Claude Code、实时语音与数字媒体。YouDub 将 AI 视频本地化做成完整工作流；Codex Account Switcher 与 Claudex 服务日常开发；Remember Me 探索 AI 时代的数字遗产。GitHub 上的 liuzhao1225、X 上的 @liuzhao_666，以及 Bilibili 的“黑纹白斑马”均为同一创作者。</p>
       </section>
 
-      <section class="routes shell" id="places" aria-label="个人平台与项目">
-        <a class="route" href="https://github.com/liuzhao1225">
-          <div><small>Build in public</small><h3>GitHub</h3><p>开源 macOS 工具、AI 应用与可验证的工程实现。</p></div>
-          <strong>@liuzhao1225 →</strong>
+      <p class="section-label shell" id="projects">Selected work · 代表项目</p>
+      <section class="routes shell" aria-label="代表开源项目">
+        <a class="route" href="https://github.com/liuzhao1225/YouDub-webui">
+          <div><small>Flagship · 5.3k+ stars</small><h3>YouDub WebUI</h3><p>从下载、识别、翻译、声音克隆到成片输出的一站式 AI 视频本地化系统。</p></div>
+          <strong>查看开源项目 →</strong>
         </a>
         <a class="route" href="https://liuzhao1225.github.io/codex-account-switcher/">
-          <div><small>Featured project</small><h3>Codex Account Switcher</h3><p>在 macOS 菜单栏查看周用量，并切换多个 Codex Desktop 与 CLI 账号。</p></div>
+          <div><small>Native macOS utility</small><h3>Codex Account Switcher</h3><p>在 macOS 菜单栏查看周用量，并切换多个 Codex Desktop 与 CLI 账号。</p></div>
           <strong>打开项目官网 →</strong>
         </a>
-        <a class="route" href="https://x.com/liuzhao_666">
-          <div><small>Research notes</small><h3>X</h3><p>AI agents、Codex、前沿模型与工作流观察。</p></div>
-          <strong>@liuzhao_666 →</strong>
+        <a class="route" href="https://github.com/liuzhao1225/claudex">
+          <div><small>AI developer tool</small><h3>Claudex</h3><p>通过私有、本机的单命令配置，在 Claude Code 中使用 Codex 模型。</p></div>
+          <strong>查看 Claudex →</strong>
         </a>
-        <a class="route" href="https://space.bilibili.com/1263732318">
-          <div><small>Video universe</small><h3>黑纹白斑马</h3><p>科技、互联网、游戏与全球创作者内容的中文入口。</p></div>
-          <strong>Bilibili · 107 万+ →</strong>
+        <a class="route" href="https://github.com/liuzhao1225/remember-me.ai">
+          <div><small>Digital legacy</small><h3>Remember Me</h3><p>把人的故事、作品与价值观保存为可检索的结构化记忆，探索 AI 时代的数字遗产。</p></div>
+          <strong>进入项目 →</strong>
         </a>
+      </section>
+
+      <section class="platforms shell" aria-label="个人平台">
+        <a class="platform" href="https://github.com/liuzhao1225">GitHub <span>@liuzhao1225 ↗</span></a>
+        <a class="platform" href="https://x.com/liuzhao_666">X <span>@liuzhao_666 ↗</span></a>
+        <a class="platform" href="https://space.bilibili.com/1263732318">黑纹白斑马 <span>Bilibili · 107 万+ ↗</span></a>
       </section>
     </main>
 
