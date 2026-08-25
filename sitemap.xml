@@ -19,6 +19,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://liuzhao1225.github.io/codex-account-switcher/guides/switch-multiple-codex-accounts/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://liuzhao1225.github.io/codex-account-switcher/zh-CN/guides/codex-multiple-accounts/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://liuzhao1225.github.io/remember-me.ai/</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
