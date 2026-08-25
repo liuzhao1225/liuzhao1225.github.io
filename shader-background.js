@@ -122,11 +122,12 @@
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const startedAt = performance.now();
+  const animationSpeed = 0.6;
 
   const render = (now) => {
     resize();
     gl.uniform2f(resolution, canvas.width, canvas.height);
-    gl.uniform1f(time, reduceMotion ? 0 : (now - startedAt) / 1000);
+    gl.uniform1f(time, reduceMotion ? 0 : ((now - startedAt) / 1000) * animationSpeed);
     gl.drawArrays(gl.TRIANGLES, 0, 6);
 
     if (!reduceMotion) requestAnimationFrame(render);
