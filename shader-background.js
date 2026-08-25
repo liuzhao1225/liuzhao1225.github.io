@@ -109,9 +109,10 @@
   gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
 
   const resize = () => {
-    const density = Math.min(window.devicePixelRatio || 1, 1.5);
-    const width = Math.round(window.innerWidth * density);
-    const height = Math.round(window.innerHeight * density);
+    const density = Math.min(window.devicePixelRatio || 1, 1);
+    const renderScale = window.innerWidth < 720 ? 0.82 : 0.72;
+    const width = Math.round(window.innerWidth * density * renderScale);
+    const height = Math.round(window.innerHeight * density * renderScale);
 
     if (canvas.width !== width || canvas.height !== height) {
       canvas.width = width;
@@ -123,9 +124,21 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const startedAt = performance.now();
   const animationSpeed = 0.6;
+  let needsResize = true;
+
+  window.addEventListener(
+    "resize",
+    () => {
+      needsResize = true;
+    },
+    { passive: true },
+  );
 
   const render = (now) => {
-    resize();
+    if (needsResize) {
+      resize();
+      needsResize = false;
+    }
     gl.uniform2f(resolution, canvas.width, canvas.height);
     gl.uniform1f(time, reduceMotion ? 0 : ((now - startedAt) / 1000) * animationSpeed);
     gl.drawArrays(gl.TRIANGLES, 0, 6);

@@ -3,544 +3,292 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>刘朝 Zhao Liu（黑纹白斑马）｜AI、开源工具与 Bilibili 创作者</title>
-    <meta name="description" content="刘朝（Zhao Liu），Bilibili 创作者黑纹白斑马、GitHub 开发者 liuzhao1225、X 用户 liuzhao_666。YouDub、Codex Account Switcher、Claudex 与 Remember Me 的作者。">
+    <meta name="color-scheme" content="light dark">
+    <title>刘朝 Zhao Liu | AI 产品、开源工具与黑纹白斑马</title>
+    <meta name="description" content="刘朝（Zhao Liu），AI 产品构建者、开源开发者，也是 Bilibili 创作者黑纹白斑马。这里汇集 YouDub、Codex Account Switcher、Claudex、Remember Me，以及 GitHub、X 和 Bilibili 的公开入口。">
     <meta name="keywords" content="刘朝,Zhao Liu,黑纹白斑马,liuzhao1225,liuzhao_666,YouDub,AI 视频本地化,Codex Account Switcher,Claudex,数字遗产,AI agents,Bilibili,GitHub">
     <meta name="author" content="刘朝 Zhao Liu">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="theme-color" content="#070812" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#eef1f6" media="(prefers-color-scheme: light)">
+
     <link rel="canonical" href="https://liuzhao1225.github.io/">
     <link rel="me" href="https://github.com/liuzhao1225">
     <link rel="me" href="https://x.com/liuzhao_666">
     <link rel="me" href="https://space.bilibili.com/1263732318">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/15737086?v=4">
+    <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin>
+
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="zh_CN">
-    <meta property="og:title" content="刘朝 Zhao Liu（黑纹白斑马）">
-    <meta property="og:description" content="AI、开源工具与数字媒体。GitHub、X、Bilibili 的统一个人入口。">
+    <meta property="og:title" content="刘朝 Zhao Liu | AI 产品、开源工具与黑纹白斑马">
+    <meta property="og:description" content="开源开发者、AI 产品构建者，也是用黑纹白斑马连接语言与内容的人。">
     <meta property="og:url" content="https://liuzhao1225.github.io/">
+    <meta property="og:site_name" content="刘朝宇宙 Zhao Liu Universe">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/15737086?v=4">
+    <meta property="og:image:alt" content="刘朝在 GitHub 使用的手绘头像">
     <meta property="profile:first_name" content="朝">
     <meta property="profile:last_name" content="刘">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@liuzhao_666">
-    <meta name="theme-color" content="#050713">
+    <meta name="twitter:title" content="刘朝 Zhao Liu">
+    <meta name="twitter:description" content="开源工具、AI 产品，以及语言、记忆与智能的长期实验。">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/15737086?v=4">
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://liuzhao1225.github.io/#liuzhao",
-        "name": "刘朝",
-        "alternateName": ["Zhao Liu", "黑纹白斑马", "liuzhao1225", "liuzhao_666"],
-        "url": "https://liuzhao1225.github.io/",
-        "description": "AI product builder, open-source developer and Bilibili creator known as 黑纹白斑马.",
-        "sameAs": [
-          "https://github.com/liuzhao1225",
-          "https://x.com/liuzhao_666",
-          "https://space.bilibili.com/1263732318"
-        ],
-        "knowsAbout": [
-          "AI agents",
-          "OpenAI Codex",
-          "macOS development",
-          "realtime voice",
-          "digital media",
-          "Bilibili"
-        ],
-        "owns": [
+        "@graph": [
           {
-            "@type": "SoftwareApplication",
-            "name": "YouDub WebUI",
-            "url": "https://github.com/liuzhao1225/YouDub-webui",
-            "applicationCategory": "MultimediaApplication"
+            "@type": "WebSite",
+            "@id": "https://liuzhao1225.github.io/#website",
+            "url": "https://liuzhao1225.github.io/",
+            "name": "刘朝宇宙",
+            "alternateName": ["Zhao Liu Universe", "黑纹白斑马", "Zhao Liu"]
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://liuzhao1225.github.io/#profile-page",
+            "url": "https://liuzhao1225.github.io/",
+            "name": "刘朝 Zhao Liu 的个人主页",
+            "isPartOf": { "@id": "https://liuzhao1225.github.io/#website" },
+            "mainEntity": { "@id": "https://liuzhao1225.github.io/#liuzhao" },
+            "hasPart": [
+              { "@id": "https://liuzhao1225.github.io/#youdub" },
+              { "@id": "https://liuzhao1225.github.io/#codex-account-switcher" },
+              { "@id": "https://liuzhao1225.github.io/#claudex" },
+              { "@id": "https://liuzhao1225.github.io/#remember-me" }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://liuzhao1225.github.io/#liuzhao",
+            "name": "刘朝",
+            "alternateName": ["Zhao Liu", "黑纹白斑马", "liuzhao1225", "liuzhao_666"],
+            "url": "https://liuzhao1225.github.io/",
+            "image": "https://avatars.githubusercontent.com/u/15737086?v=4",
+            "description": "Open-source developer and AI product builder exploring how information moves across languages, time and intelligent systems.",
+            "sameAs": [
+              "https://github.com/liuzhao1225",
+              "https://x.com/liuzhao_666",
+              "https://space.bilibili.com/1263732318"
+            ],
+            "knowsAbout": [
+              "AI agents",
+              "OpenAI Codex",
+              "macOS development",
+              "realtime voice",
+              "digital media",
+              "Bilibili"
+            ]
           },
           {
             "@type": "SoftwareApplication",
+            "@id": "https://liuzhao1225.github.io/#youdub",
+            "name": "YouDub WebUI",
+            "url": "https://github.com/liuzhao1225/YouDub-webui",
+            "applicationCategory": "MultimediaApplication",
+            "creator": { "@id": "https://liuzhao1225.github.io/#liuzhao" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://liuzhao1225.github.io/#codex-account-switcher",
             "name": "Codex Account Switcher",
             "url": "https://liuzhao1225.github.io/codex-account-switcher/",
             "applicationCategory": "DeveloperApplication",
-            "operatingSystem": "macOS"
+            "operatingSystem": "macOS",
+            "creator": { "@id": "https://liuzhao1225.github.io/#liuzhao" }
           },
           {
             "@type": "SoftwareApplication",
+            "@id": "https://liuzhao1225.github.io/#claudex",
             "name": "Claudex",
             "url": "https://github.com/liuzhao1225/claudex",
-            "applicationCategory": "DeveloperApplication"
+            "applicationCategory": "DeveloperApplication",
+            "creator": { "@id": "https://liuzhao1225.github.io/#liuzhao" }
           },
           {
             "@type": "CreativeWork",
+            "@id": "https://liuzhao1225.github.io/#remember-me",
             "name": "Remember Me",
-            "url": "https://github.com/liuzhao1225/remember-me.ai"
+            "url": "https://liuzhao1225.github.io/remember-me.ai/",
+            "creator": { "@id": "https://liuzhao1225.github.io/#liuzhao" }
           }
         ]
       }
     </script>
-    <style>
-      :root {
-        color-scheme: dark;
-        --paper: rgba(8, 10, 20, 0.68);
-        --ink: #f7f8fb;
-        --muted: #c2c6d2;
-        --line: rgba(255, 255, 255, 0.18);
-        --blue: #72b7ff;
-        --blue-soft: rgba(114, 183, 255, 0.18);
-        --white: #ffffff;
-        --max: 1180px;
-      }
 
-      * { box-sizing: border-box; }
-
-      html { scroll-behavior: smooth; }
-
-      body {
-        margin: 0;
-        min-width: 320px;
-        background: #050713;
-        color: var(--ink);
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Noto Sans CJK SC", "Helvetica Neue", sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        pointer-events: none;
-        background:
-          linear-gradient(180deg, rgba(3, 5, 13, 0.3), rgba(3, 5, 13, 0.58)),
-          radial-gradient(circle at 18% 18%, rgba(22, 49, 76, 0.18), transparent 34%);
-      }
-
-      #shader-background {
-        position: fixed;
-        inset: 0;
-        z-index: -2;
-        width: 100%;
-        height: 100%;
-        background: #050713;
-        pointer-events: none;
-      }
-
-      a { color: inherit; }
-
-      .shell {
-        width: min(calc(100% - 40px), var(--max));
-        margin: 0 auto;
-      }
-
-      header {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        border-bottom: 1px solid var(--line);
-        background: rgba(8, 10, 20, 0.58);
-        backdrop-filter: blur(22px) saturate(170%);
-        -webkit-backdrop-filter: blur(22px) saturate(170%);
-      }
-
-      nav {
-        min-height: 62px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-      }
-
-      .wordmark {
-        display: inline-flex;
-        align-items: baseline;
-        gap: 10px;
-        text-decoration: none;
-        font-weight: 720;
-        letter-spacing: -0.03em;
-      }
-
-      .wordmark small {
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 650;
-        letter-spacing: 0.12em;
-      }
-
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 22px;
-        font-size: 14px;
-        font-weight: 600;
-      }
-
-      .nav-links a { text-decoration: none; }
-      .nav-links a:hover { color: var(--blue); }
-
-      main { overflow: hidden; }
-
-      .hero {
-        min-height: 720px;
-        display: grid;
-        grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
-        align-items: center;
-        gap: clamp(40px, 7vw, 100px);
-        padding: 86px 0 74px;
-      }
-
-      .eyebrow {
-        margin: 0 0 22px;
-        color: var(--blue);
-        font-size: 13px;
-        font-weight: 720;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(64px, 9vw, 130px);
-        line-height: 0.84;
-        letter-spacing: -0.085em;
-        font-weight: 760;
-      }
-
-      h1 span {
-        display: block;
-        margin-top: 22px;
-        color: var(--muted);
-        font-size: 0.29em;
-        letter-spacing: 0.2em;
-        line-height: 1;
-      }
-
-      .lede {
-        max-width: 660px;
-        margin: 38px 0 0;
-        color: #e0e3eb;
-        font-size: clamp(18px, 2vw, 23px);
-        line-height: 1.65;
-        letter-spacing: -0.02em;
-      }
-
-      .hero-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 34px;
-      }
-
-      .pill {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 46px;
-        padding: 0 19px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        background: rgba(12, 15, 28, 0.56);
-        backdrop-filter: blur(18px) saturate(150%);
-        -webkit-backdrop-filter: blur(18px) saturate(150%);
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 650;
-        transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-      }
-
-      .pill.primary {
-        border-color: var(--blue);
-        background: rgba(38, 123, 211, 0.78);
-        color: var(--white);
-      }
-
-      .pill:hover {
-        transform: translateY(-2px);
-        border-color: rgba(255, 255, 255, 0.48);
-        background: rgba(255, 255, 255, 0.14);
-      }
-
-      .pill.primary:hover { border-color: #b8dcff; background: rgba(48, 139, 231, 0.94); }
-
-      .orbit {
-        position: relative;
-        aspect-ratio: 1;
-        width: min(100%, 510px);
-        justify-self: end;
-        border: 1px solid var(--line);
-        border-radius: 50%;
-        background:
-          radial-gradient(circle at center, #0b0d17 0 32%, transparent 32.4%),
-          repeating-conic-gradient(from 18deg, #080910 0 6deg, #f7f7f9 6deg 14deg, #8a8f9b 14deg 19deg, #f7f7f9 19deg 27deg);
-        box-shadow: 0 28px 90px rgba(0, 0, 0, 0.38);
-      }
-
-      .orbit::before,
-      .orbit::after {
-        content: "";
-        position: absolute;
-        inset: 10.5%;
-        border: 1px solid rgba(114, 183, 255, 0.48);
-        border-radius: 50%;
-      }
-
-      .orbit::after { inset: 22%; border-color: var(--line); }
-
-      .orbit-core {
-        position: absolute;
-        inset: 33%;
-        z-index: 2;
-        display: grid;
-        place-items: center;
-        border-radius: 50%;
-        background: #0b0d17;
-        color: var(--white);
-        font-size: clamp(19px, 3vw, 30px);
-        font-weight: 760;
-        letter-spacing: -0.06em;
-        text-align: center;
-      }
-
-      .orbit-tag {
-        position: absolute;
-        z-index: 3;
-        padding: 9px 13px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 999px;
-        background: rgba(8, 10, 20, 0.76);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
-        backdrop-filter: blur(16px) saturate(160%);
-        -webkit-backdrop-filter: blur(16px) saturate(160%);
-        font-size: clamp(12px, 1.4vw, 14px);
-        font-weight: 700;
-        white-space: nowrap;
-      }
-
-      .orbit-tag:nth-of-type(1) { top: 9%; left: 48%; }
-      .orbit-tag:nth-of-type(2) { top: 49%; right: -3%; }
-      .orbit-tag:nth-of-type(3) { bottom: 11%; left: 46%; }
-      .orbit-tag:nth-of-type(4) { top: 48%; left: -4%; }
-
-      .manifesto {
-        border-top: 1px solid var(--line);
-        padding: 86px 0 30px;
-        text-shadow: 0 2px 26px rgba(0, 0, 0, 0.42);
-      }
-
-      .manifesto h2 {
-        max-width: 920px;
-        margin: 0;
-        font-size: clamp(36px, 5vw, 70px);
-        line-height: 1.08;
-        letter-spacing: -0.055em;
-        font-weight: 720;
-      }
-
-      .manifesto h2 em { color: var(--blue); font-style: normal; }
-
-      .manifesto p {
-        max-width: 720px;
-        margin: 30px 0 0 auto;
-        color: var(--muted);
-        font-size: 18px;
-        line-height: 1.75;
-      }
-
-      .routes {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1px;
-        margin: 92px 0;
-        border: 1px solid var(--line);
-        background: var(--line);
-        box-shadow: 0 28px 90px rgba(0, 0, 0, 0.22);
-        backdrop-filter: blur(24px) saturate(145%);
-        -webkit-backdrop-filter: blur(24px) saturate(145%);
-      }
-
-      .route {
-        min-height: 330px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: clamp(28px, 4vw, 48px);
-        background: rgba(8, 10, 20, 0.7);
-        text-decoration: none;
-        transition: background 180ms ease;
-      }
-
-      .route:hover { background: rgba(18, 23, 40, 0.86); }
-
-      .route small {
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 720;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
-
-      .route h3 {
-        margin: 20px 0 0;
-        font-size: clamp(31px, 4vw, 52px);
-        line-height: 1;
-        letter-spacing: -0.055em;
-      }
-
-      .route p {
-        max-width: 440px;
-        margin: 22px 0 0;
-        color: var(--muted);
-        font-size: 16px;
-        line-height: 1.65;
-      }
-
-      .route strong {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        margin-top: 42px;
-        color: var(--blue);
-        font-size: 15px;
-      }
-
-      .section-label {
-        margin: 86px 0 0;
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 720;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-      }
-
-      .platforms {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-        margin: -36px 0 92px;
-      }
-
-      .platform {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 18px;
-        padding: 22px 24px;
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        background: rgba(8, 10, 20, 0.66);
-        backdrop-filter: blur(22px) saturate(145%);
-        -webkit-backdrop-filter: blur(22px) saturate(145%);
-        text-decoration: none;
-        font-weight: 680;
-      }
-
-      .platform span { color: var(--muted); font-size: 13px; font-weight: 560; }
-      .platform:hover { border-color: var(--blue); background: rgba(18, 23, 40, 0.86); }
-
-      footer {
-        border-top: 1px solid var(--line);
-        padding: 30px 0 42px;
-        color: var(--muted);
-        font-size: 13px;
-      }
-
-      .footer-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-      }
-
-      .shader-credit a { text-underline-offset: 3px; }
-      .shader-credit a:hover { color: var(--ink); }
-
-      @media (max-width: 820px) {
-        .shell { width: min(calc(100% - 28px), var(--max)); }
-        .nav-links a:not(:last-child) { display: none; }
-        .hero { min-height: 0; grid-template-columns: 1fr; padding-top: 62px; }
-        h1 { font-size: clamp(62px, 22vw, 100px); }
-        .orbit { width: min(92vw, 430px); justify-self: center; margin: 12px 0 20px; }
-        .manifesto { padding-top: 62px; }
-        .manifesto p { margin-left: 0; }
-        .routes { grid-template-columns: 1fr; margin: 62px 0; }
-        .route { min-height: 280px; }
-        .platforms { grid-template-columns: 1fr; margin-top: -18px; }
-        .footer-row { flex-direction: column; }
-      }
-
-      @media (prefers-reduced-motion: no-preference) {
-        .orbit { animation: arrive 850ms cubic-bezier(.2,.8,.2,1) both; }
-        .hero-copy { animation: rise 650ms ease-out both; }
-        @keyframes arrive { from { opacity: 0; transform: scale(.92) rotate(-5deg); } }
-        @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./shader-background.js" defer></script>
+    <script src="./site.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#content">跳到正文</a>
     <canvas id="shader-background" aria-hidden="true"></canvas>
-    <header>
-      <nav class="shell" aria-label="主要导航">
-        <a class="wordmark" href="#top">刘朝 <small>ZHAO LIU UNIVERSE</small></a>
+
+    <header class="site-header">
+      <nav class="shell nav" aria-label="主要导航">
+        <a class="wordmark" href="#top" aria-label="刘朝个人主页">
+          <span>刘朝</span>
+          <small>ZHAO LIU UNIVERSE</small>
+        </a>
         <div class="nav-links">
           <a href="#about">关于</a>
           <a href="#projects">项目</a>
-          <a href="https://github.com/liuzhao1225">GitHub ↗</a>
+          <a href="https://github.com/liuzhao1225">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero shell" aria-labelledby="hero-title">
+    <main id="content">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">刘朝宇宙 · 黑纹白斑马</p>
-          <h1 id="hero-title">刘朝<span>ZHAO LIU</span></h1>
-          <p class="lede">同一个人，几个观察世界的窗口。写 AI 与代码，做开源工具，也以“黑纹白斑马”持续制作和整理数字内容。</p>
-          <div class="hero-links">
-            <a class="pill primary" href="#projects">查看代表项目</a>
-            <a class="pill" href="https://x.com/liuzhao_666">阅读英文动态</a>
-            <a class="pill" href="https://space.bilibili.com/1263732318">进入 Bilibili</a>
+          <p class="hero-kicker">刘朝 / Zhao Liu</p>
+          <h1 id="hero-title">
+            <span>把 AI 做成</span>
+            <span>可以使用的东西。</span>
+          </h1>
+          <p class="hero-intro">开源开发者、AI 产品构建者，也是用“黑纹白斑马”连接语言与内容的人。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">浏览项目</a>
+            <a class="button button-secondary" href="https://github.com/liuzhao1225">GitHub</a>
           </div>
         </div>
 
-        <div class="orbit" aria-label="刘朝在 GitHub、X、Bilibili 与开源项目之间的身份关系图">
-          <div class="orbit-core">黑纹<br>白斑马</div>
-          <span class="orbit-tag">GitHub · liuzhao1225</span>
-          <span class="orbit-tag">X · @liuzhao_666</span>
-          <span class="orbit-tag">Bilibili · 1263732318</span>
-          <span class="orbit-tag">Open source · YouDub</span>
-        </div>
+        <aside class="identity-panel" aria-label="刘朝的公开身份">
+          <div class="identity-profile">
+            <img src="https://avatars.githubusercontent.com/u/15737086?v=4" alt="刘朝在 GitHub 使用的手绘头像" width="150" height="150">
+            <div>
+              <strong>刘朝 Zhao Liu</strong>
+              <span>同一个人，三个公开入口</span>
+            </div>
+          </div>
+          <div class="identity-links">
+            <a href="https://github.com/liuzhao1225">
+              <span>GitHub</span>
+              <strong>liuzhao1225</strong>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://x.com/liuzhao_666">
+              <span>X</span>
+              <strong>@liuzhao_666</strong>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://space.bilibili.com/1263732318">
+              <span>Bilibili</span>
+              <strong>黑纹白斑马</strong>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </aside>
       </section>
 
-      <section class="manifesto shell" id="about">
-        <h2>从 <em>AI agents</em> 到视频本地化，从 macOS 工具到百万人的内容空间。</h2>
-        <p>刘朝（Zhao Liu）关注 Codex、Claude Code、实时语音与数字媒体。YouDub 将 AI 视频本地化做成完整工作流；Codex Account Switcher 与 Claudex 服务日常开发；Remember Me 探索 AI 时代的数字遗产。GitHub 上的 liuzhao1225、X 上的 @liuzhao_666，以及 Bilibili 的“黑纹白斑马”均为同一创作者。</p>
-      </section>
+      <div class="content-surface">
+        <section class="about shell" id="about" data-reveal>
+          <h2>我相信技术，也相信人的自主。</h2>
+          <div class="about-copy">
+            <p>我习惯从系统与第一性原理理解问题，再把想法做成真正可用的东西。YouDub 让内容跨越语言，Remember Me 尝试让人的故事、判断和选择继续参与未来的系统。</p>
+            <p>面对 AI 带来的不可逆变化，我选择理解、构建并公开，主动参与答案的形成。我重视时间、品味、验证和责任。影响在，就足够了。</p>
+          </div>
+        </section>
 
-      <p class="section-label shell" id="projects">Selected work · 代表项目</p>
-      <section class="routes shell" aria-label="代表开源项目">
-        <a class="route" href="https://github.com/liuzhao1225/YouDub-webui">
-          <div><small>Flagship · 5.3k+ stars</small><h3>YouDub WebUI</h3><p>从下载、识别、翻译、声音克隆到成片输出的一站式 AI 视频本地化系统。</p></div>
-          <strong>查看开源项目 →</strong>
-        </a>
-        <a class="route" href="https://liuzhao1225.github.io/codex-account-switcher/">
-          <div><small>Native macOS utility</small><h3>Codex Account Switcher</h3><p>在 macOS 菜单栏查看周用量，并切换多个 Codex Desktop 与 CLI 账号。</p></div>
-          <strong>打开项目官网 →</strong>
-        </a>
-        <a class="route" href="https://github.com/liuzhao1225/claudex">
-          <div><small>AI developer tool</small><h3>Claudex</h3><p>通过私有、本机的单命令配置，在 Claude Code 中使用 Codex 模型。</p></div>
-          <strong>查看 Claudex →</strong>
-        </a>
-        <a class="route" href="https://github.com/liuzhao1225/remember-me.ai">
-          <div><small>Digital legacy</small><h3>Remember Me</h3><p>把人的故事、作品与价值观保存为可检索的结构化记忆，探索 AI 时代的数字遗产。</p></div>
-          <strong>进入项目 →</strong>
-        </a>
-      </section>
+        <section class="work shell" id="projects" aria-labelledby="projects-title">
+          <div class="section-heading" data-reveal>
+            <h2 id="projects-title">代表项目</h2>
+            <p>从视频本地化到开发者工具，这些项目都来自正在使用的工作流。</p>
+          </div>
 
-      <section class="platforms shell" aria-label="个人平台">
-        <a class="platform" href="https://github.com/liuzhao1225">GitHub <span>@liuzhao1225 ↗</span></a>
-        <a class="platform" href="https://x.com/liuzhao_666">X <span>@liuzhao_666 ↗</span></a>
-        <a class="platform" href="https://space.bilibili.com/1263732318">黑纹白斑马 <span>Bilibili · 107 万+ ↗</span></a>
-      </section>
+          <div class="project-grid">
+            <a class="project project-youdub" href="https://github.com/liuzhao1225/YouDub-webui" data-reveal>
+              <div class="project-visual project-visual-youdub">
+                <img src="https://raw.githubusercontent.com/liuzhao1225/YouDub-webui/main/apps/web/public/youdub-wordmark.svg" alt="YouDub 标志" width="896" height="191" loading="lazy">
+              </div>
+              <div class="project-copy">
+                <h3>YouDub WebUI</h3>
+                <p>下载、识别、翻译、声音克隆、混音与字幕压制的一站式 AI 视频本地化系统。</p>
+                <div class="project-foot">
+                  <span>5,000+ GitHub stars</span>
+                  <span>查看项目 <span aria-hidden="true">↗</span></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="project project-codex" href="https://liuzhao1225.github.io/codex-account-switcher/" data-reveal style="--reveal-delay: 80ms">
+              <div class="project-visual project-visual-codex">
+                <img src="https://raw.githubusercontent.com/liuzhao1225/codex-account-switcher/main/site/assets/product-hero.zh-CN.webp" alt="Codex Account Switcher 的 macOS 菜单栏界面" width="1774" height="887" loading="lazy">
+              </div>
+              <div class="project-copy">
+                <h3>Codex Account Switcher</h3>
+                <p>在 macOS 菜单栏查看周用量，并切换 Codex Desktop 与 CLI 账号。</p>
+                <div class="project-foot">
+                  <span>原生 macOS 工具</span>
+                  <span>查看项目 <span aria-hidden="true">↗</span></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="project project-claudex" href="https://github.com/liuzhao1225/claudex" data-reveal>
+              <div class="project-copy">
+                <h3>Claudex</h3>
+                <p>通过私有、本机的单命令配置，在 Claude Code 中使用 Codex 模型。</p>
+                <div class="project-foot">
+                  <span>macOS 与 Linux</span>
+                  <span>查看项目 <span aria-hidden="true">↗</span></span>
+                </div>
+              </div>
+              <div class="project-type" aria-hidden="true">
+                <span>Claude Code</span>
+                <span>Codex models</span>
+              </div>
+            </a>
+
+            <a class="project project-memory" href="https://liuzhao1225.github.io/remember-me.ai/" data-reveal style="--reveal-delay: 80ms">
+              <div class="project-quote">“主动留下自己，让 AI 记住你。”</div>
+              <div class="project-copy">
+                <h3>Remember Me</h3>
+                <p>把人的故事、作品与价值观保存为可检索的结构化记忆，探索 AI 时代的数字遗产。</p>
+                <div class="project-foot">
+                  <span>长期记忆实验</span>
+                  <span>查看项目 <span aria-hidden="true">↗</span></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="channels shell" aria-labelledby="channels-title" data-reveal>
+          <div class="section-heading section-heading-compact">
+            <h2 id="channels-title">继续找到我</h2>
+          </div>
+          <div class="channel-list">
+            <a href="https://github.com/liuzhao1225">
+              <span class="channel-name">GitHub</span>
+              <span class="channel-handle">liuzhao1225</span>
+              <span class="channel-purpose">开源代码与项目更新</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://x.com/liuzhao_666">
+              <span class="channel-name">X</span>
+              <span class="channel-handle">@liuzhao_666</span>
+              <span class="channel-purpose">英文技术动态</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://space.bilibili.com/1263732318">
+              <span class="channel-name">Bilibili</span>
+              <span class="channel-handle">黑纹白斑马</span>
+              <span class="channel-purpose">中文视频与内容</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <div class="footer-row shell">
-        <span>© 2026 刘朝 Zhao Liu · 黑纹白斑马</span>
-        <span class="shader-credit">Background by <a href="https://www.shadertoy.com/view/WtjyzR">Benoit Marini</a> · <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></span>
+        <span>© 2026 刘朝 Zhao Liu</span>
+        <span>背景作品：<a href="https://www.shadertoy.com/view/WtjyzR">Benoit Marini</a> / <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></span>
       </div>
     </footer>
-    <script src="./shader-background.js"></script>
   </body>
 </html>
