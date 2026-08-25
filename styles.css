@@ -504,7 +504,6 @@ h1 span:last-child {
 
 .project-visual-youdub img {
   width: min(72%, 440px);
-  filter: grayscale(1) brightness(2.6);
 }
 
 .project-visual-codex {
@@ -705,10 +704,6 @@ h1 span:last-child {
 @media (prefers-color-scheme: light) {
   .project-visual-youdub {
     background: radial-gradient(circle at 22% 18%, rgba(6, 105, 200, 0.18), transparent 42%);
-  }
-
-  .project-visual-youdub img {
-    filter: grayscale(1) brightness(0.24);
   }
 
   .project-visual-codex {
