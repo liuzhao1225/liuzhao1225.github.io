@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>刘朝 Zhao Liu（黑纹白斑马）｜AI、开源工具与 Bilibili 创作者</title>
+    <meta name="description" content="刘朝（Zhao Liu），Bilibili 创作者黑纹白斑马、GitHub 开发者 liuzhao1225、X 用户 liuzhao_666。关注 AI agents、Codex、开源 macOS 工具、实时语音与数字媒体。">
+    <meta name="keywords" content="刘朝,Zhao Liu,黑纹白斑马,liuzhao1225,liuzhao_666,AI agents,Codex,开源工具,Bilibili,GitHub">
+    <meta name="author" content="刘朝 Zhao Liu">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <link rel="canonical" href="https://liuzhao1225.github.io/">
+    <link rel="me" href="https://github.com/liuzhao1225">
+    <link rel="me" href="https://x.com/liuzhao_666">
+    <link rel="me" href="https://space.bilibili.com/1263732318">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="刘朝 Zhao Liu（黑纹白斑马）">
+    <meta property="og:description" content="AI、开源工具与数字媒体。GitHub、X、Bilibili 的统一个人入口。">
+    <meta property="og:url" content="https://liuzhao1225.github.io/">
+    <meta property="profile:first_name" content="朝">
+    <meta property="profile:last_name" content="刘">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@liuzhao_666">
+    <meta name="theme-color" content="#f4f4f6">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://liuzhao1225.github.io/#liuzhao",
+        "name": "刘朝",
+        "alternateName": ["Zhao Liu", "黑纹白斑马", "liuzhao1225", "liuzhao_666"],
+        "url": "https://liuzhao1225.github.io/",
+        "description": "AI product builder, open-source developer and Bilibili creator known as 黑纹白斑马.",
+        "sameAs": [
+          "https://github.com/liuzhao1225",
+          "https://x.com/liuzhao_666",
+          "https://space.bilibili.com/1263732318"
+        ],
+        "knowsAbout": [
+          "AI agents",
+          "OpenAI Codex",
+          "macOS development",
+          "realtime voice",
+          "digital media",
+          "Bilibili"
+        ],
+        "owns": {
+          "@type": "SoftwareApplication",
+          "name": "Codex Account Switcher",
+          "url": "https://liuzhao1225.github.io/codex-account-switcher/",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "macOS"
+        }
+      }
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f4f4f6;
+        --ink: #171719;
+        --muted: #69696f;
+        --line: rgba(23, 23, 25, 0.14);
+        --blue: #006fd6;
+        --blue-soft: #dcebfa;
+        --white: #ffffff;
+        --max: 1180px;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Noto Sans CJK SC", "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: inherit; }
+
+      .shell {
+        width: min(calc(100% - 40px), var(--max));
+        margin: 0 auto;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid var(--line);
+        background: rgba(244, 244, 246, 0.82);
+        backdrop-filter: blur(22px) saturate(170%);
+      }
+
+      nav {
+        min-height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .wordmark {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 10px;
+        text-decoration: none;
+        font-weight: 720;
+        letter-spacing: -0.03em;
+      }
+
+      .wordmark small {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 650;
+        letter-spacing: 0.12em;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .nav-links a { text-decoration: none; }
+      .nav-links a:hover { color: var(--blue); }
+
+      main { overflow: hidden; }
+
+      .hero {
+        min-height: 720px;
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+        align-items: center;
+        gap: clamp(40px, 7vw, 100px);
+        padding: 86px 0 74px;
+      }
+
+      .eyebrow {
+        margin: 0 0 22px;
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 720;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(64px, 9vw, 130px);
+        line-height: 0.84;
+        letter-spacing: -0.085em;
+        font-weight: 760;
+      }
+
+      h1 span {
+        display: block;
+        margin-top: 22px;
+        color: var(--muted);
+        font-size: 0.29em;
+        letter-spacing: 0.2em;
+        line-height: 1;
+      }
+
+      .lede {
+        max-width: 660px;
+        margin: 38px 0 0;
+        color: #3f3f44;
+        font-size: clamp(18px, 2vw, 23px);
+        line-height: 1.65;
+        letter-spacing: -0.02em;
+      }
+
+      .hero-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 34px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 19px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.58);
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 650;
+        transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+      }
+
+      .pill.primary {
+        border-color: var(--blue);
+        background: var(--blue);
+        color: white;
+      }
+
+      .pill:hover {
+        transform: translateY(-2px);
+        border-color: var(--ink);
+        background: var(--white);
+      }
+
+      .pill.primary:hover { border-color: #005cae; background: #005cae; }
+
+      .orbit {
+        position: relative;
+        aspect-ratio: 1;
+        width: min(100%, 510px);
+        justify-self: end;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at center, var(--white) 0 32%, transparent 32.4%),
+          repeating-conic-gradient(from 18deg, #111 0 6deg, #fff 6deg 14deg, #d9d9de 14deg 19deg, #fff 19deg 27deg);
+        box-shadow: 0 28px 80px rgba(35, 40, 52, 0.12);
+      }
+
+      .orbit::before,
+      .orbit::after {
+        content: "";
+        position: absolute;
+        inset: 10.5%;
+        border: 1px solid rgba(0, 111, 214, 0.34);
+        border-radius: 50%;
+      }
+
+      .orbit::after { inset: 22%; border-color: var(--line); }
+
+      .orbit-core {
+        position: absolute;
+        inset: 33%;
+        z-index: 2;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--ink);
+        color: var(--white);
+        font-size: clamp(19px, 3vw, 30px);
+        font-weight: 760;
+        letter-spacing: -0.06em;
+        text-align: center;
+      }
+
+      .orbit-tag {
+        position: absolute;
+        z-index: 3;
+        padding: 9px 13px;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        font-size: clamp(12px, 1.4vw, 14px);
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .orbit-tag:nth-of-type(1) { top: 9%; left: 48%; }
+      .orbit-tag:nth-of-type(2) { top: 49%; right: -3%; }
+      .orbit-tag:nth-of-type(3) { bottom: 11%; left: 46%; }
+      .orbit-tag:nth-of-type(4) { top: 48%; left: -4%; }
+
+      .manifesto {
+        border-top: 1px solid var(--line);
+        padding: 86px 0 30px;
+      }
+
+      .manifesto h2 {
+        max-width: 920px;
+        margin: 0;
+        font-size: clamp(36px, 5vw, 70px);
+        line-height: 1.08;
+        letter-spacing: -0.055em;
+        font-weight: 720;
+      }
+
+      .manifesto h2 em { color: var(--blue); font-style: normal; }
+
+      .manifesto p {
+        max-width: 720px;
+        margin: 30px 0 0 auto;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.75;
+      }
+
+      .routes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1px;
+        margin: 92px 0;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .route {
+        min-height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: clamp(28px, 4vw, 48px);
+        background: var(--paper);
+        text-decoration: none;
+        transition: background 180ms ease;
+      }
+
+      .route:hover { background: var(--white); }
+
+      .route small {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 720;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .route h3 {
+        margin: 20px 0 0;
+        font-size: clamp(31px, 4vw, 52px);
+        line-height: 1;
+        letter-spacing: -0.055em;
+      }
+
+      .route p {
+        max-width: 440px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      .route strong {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 42px;
+        color: var(--blue);
+        font-size: 15px;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 30px 0 42px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      @media (max-width: 820px) {
+        .shell { width: min(calc(100% - 28px), var(--max)); }
+        .nav-links a:not(:last-child) { display: none; }
+        .hero { min-height: 0; grid-template-columns: 1fr; padding-top: 62px; }
+        h1 { font-size: clamp(62px, 22vw, 100px); }
+        .orbit { width: min(92vw, 430px); justify-self: center; margin: 12px 0 20px; }
+        .manifesto { padding-top: 62px; }
+        .manifesto p { margin-left: 0; }
+        .routes { grid-template-columns: 1fr; margin: 62px 0; }
+        .route { min-height: 280px; }
+        .footer-row { flex-direction: column; }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .orbit { animation: arrive 850ms cubic-bezier(.2,.8,.2,1) both; }
+        .hero-copy { animation: rise 650ms ease-out both; }
+        @keyframes arrive { from { opacity: 0; transform: scale(.92) rotate(-5deg); } }
+        @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="shell" aria-label="主要导航">
+        <a class="wordmark" href="#top">刘朝 <small>ZHAO LIU UNIVERSE</small></a>
+        <div class="nav-links">
+          <a href="#about">关于</a>
+          <a href="#places">坐标</a>
+          <a href="https://github.com/liuzhao1225">GitHub ↗</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">刘朝宇宙 · 黑纹白斑马</p>
+          <h1 id="hero-title">刘朝<span>ZHAO LIU</span></h1>
+          <p class="lede">同一个人，几个观察世界的窗口。写 AI 与代码，做开源工具，也以“黑纹白斑马”持续制作和整理数字内容。</p>
+          <div class="hero-links">
+            <a class="pill primary" href="https://github.com/liuzhao1225">查看开源项目</a>
+            <a class="pill" href="https://x.com/liuzhao_666">阅读英文动态</a>
+            <a class="pill" href="https://space.bilibili.com/1263732318">进入 Bilibili</a>
+          </div>
+        </div>
+
+        <div class="orbit" aria-label="刘朝在 GitHub、X、Bilibili 与开源项目之间的身份关系图">
+          <div class="orbit-core">黑纹<br>白斑马</div>
+          <span class="orbit-tag">GitHub · liuzhao1225</span>
+          <span class="orbit-tag">X · @liuzhao_666</span>
+          <span class="orbit-tag">Bilibili · 1263732318</span>
+          <span class="orbit-tag">Open source · Codex</span>
+        </div>
+      </section>
+
+      <section class="manifesto shell" id="about">
+        <h2>从 <em>AI agents</em> 到实时语音，从 macOS 工具到百万人的视频空间。</h2>
+        <p>刘朝（Zhao Liu）关注 Codex、Claude Code、中国前沿模型、实时语音与数字媒体。GitHub 上的 liuzhao1225、X 上的 @liuzhao_666，以及 Bilibili 的“黑纹白斑马”均为同一创作者。</p>
+      </section>
+
+      <section class="routes shell" id="places" aria-label="个人平台与项目">
+        <a class="route" href="https://github.com/liuzhao1225">
+          <div><small>Build in public</small><h3>GitHub</h3><p>开源 macOS 工具、AI 应用与可验证的工程实现。</p></div>
+          <strong>@liuzhao1225 →</strong>
+        </a>
+        <a class="route" href="https://liuzhao1225.github.io/codex-account-switcher/">
+          <div><small>Featured project</small><h3>Codex Account Switcher</h3><p>在 macOS 菜单栏查看周用量，并切换多个 Codex Desktop 与 CLI 账号。</p></div>
+          <strong>打开项目官网 →</strong>
+        </a>
+        <a class="route" href="https://x.com/liuzhao_666">
+          <div><small>Research notes</small><h3>X</h3><p>AI agents、Codex、前沿模型与工作流观察。</p></div>
+          <strong>@liuzhao_666 →</strong>
+        </a>
+        <a class="route" href="https://space.bilibili.com/1263732318">
+          <div><small>Video universe</small><h3>黑纹白斑马</h3><p>科技、互联网、游戏与全球创作者内容的中文入口。</p></div>
+          <strong>Bilibili · 107 万+ →</strong>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-row shell">
+        <span>© 2026 刘朝 Zhao Liu · 黑纹白斑马</span>
+        <span>GitHub · X · Bilibili · Open source</span>
+      </div>
+    </footer>
+  </body>
+</html>
