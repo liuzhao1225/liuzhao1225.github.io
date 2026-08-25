@@ -1,10 +1,11 @@
 # 刘朝宇宙 / Zhao Liu Universe
 
-The source for [liuzhao1225.github.io](https://liuzhao1225.github.io/), the canonical identity hub for 刘朝（Zhao Liu / 黑纹白斑马）across GitHub, X and Bilibili.
+The source for [liuzhao1225.github.io](https://liuzhao1225.github.io/), the canonical bilingual identity hub for 刘朝（Zhao Liu / 黑纹白斑马）across GitHub, X and Bilibili. The [English profile](https://liuzhao1225.github.io/en/) gives international search engines and readers a dedicated language entry point.
 
 ## Structure
 
 - `index.html`: semantic content, metadata and Schema.org entity graph
+- `en/index.html`: English profile with reciprocal `hreflang`
 - `styles.css`: responsive light and dark visual system
 - `site.js`: reduced-motion-aware section reveals
 - `shader-background.js`: WebGL background renderer

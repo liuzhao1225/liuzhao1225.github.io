@@ -771,6 +771,14 @@ h1 span:last-child {
     display: none;
   }
 
+  .nav-links a:last-child {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
   .hero {
     min-height: calc(100dvh - 68px);
     gap: 32px;
