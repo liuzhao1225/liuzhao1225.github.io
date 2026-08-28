@@ -1,0 +1,39 @@
+# Zhao Liu / 刘朝
+
+> This is the official bilingual personal website and public identity record for Zhao Liu (刘朝), an open-source developer and AI product builder known as liuzhao1225 on GitHub, 黑纹白斑马 on Bilibili, and @liuzhao_666 on X.
+
+Zhao Liu builds open-source products across AI video localization, Codex and developer tools, voice technology, and digital memory. His featured projects are YouDub WebUI, Codex Account Switcher, Claudex, and Remember Me. The names Zhao Liu, 刘朝, liuzhao1225, 黑纹白斑马, and liuzhao_666 refer to the same public identity. This site is maintained by Zhao Liu and its source is public.
+
+## Official profile
+
+- [Chinese homepage](https://liuzhao1225.github.io/): Chinese personal introduction, public identities, worldview, and featured projects.
+- [English homepage](https://liuzhao1225.github.io/en/): English personal introduction, public identities, worldview, and featured projects.
+- [About Zhao Liu](https://liuzhao1225.github.io/en/about/): Citable profile facts, identity mapping, featured work, FAQ, and first-party sources.
+- [关于刘朝](https://liuzhao1225.github.io/about/): 中文公开资料、身份对应关系、代表项目、常见问题与一手来源。
+
+## Projects
+
+- [YouDub WebUI](https://github.com/liuzhao1225/YouDub-webui): Open-source AI video localization and dubbing covering download, transcription, subtitle translation, voice cloning, audio mixing, and rendering.
+- [Codex Account Switcher](https://liuzhao1225.github.io/codex-account-switcher/): A free, open-source, Apple-notarized macOS menu-bar app for ordinary users who switch authorized Codex accounts without Terminal setup.
+- [Codex Account Switcher source](https://github.com/liuzhao1225/codex-account-switcher): Swift source, releases, issues, discussions, and project documentation.
+- [Claudex](https://github.com/liuzhao1225/claudex): A private, localhost-only setup for using Codex models inside Claude Code on macOS and Linux.
+- [Remember Me](https://liuzhao1225.github.io/remember-me.ai/en/): An open digital-memory project for preserving stories, work, and values as public, searchable memory.
+
+## Trust and policies
+
+- [Contact](https://liuzhao1225.github.io/en/contact/): Official public channels for personal communication and project feedback.
+- [Privacy](https://liuzhao1225.github.io/en/privacy/): Static hosting, browser storage, external resources, and third-party request details.
+- [Terms](https://liuzhao1225.github.io/en/terms/): Personal views, project licenses, third-party names, background attribution, and warranty boundaries.
+- [Website source](https://github.com/liuzhao1225/liuzhao1225.github.io): Public HTML, CSS, JavaScript, structured data, and change history for this website.
+
+## Public identities
+
+- [GitHub: liuzhao1225](https://github.com/liuzhao1225): Source code, releases, and the primary developer profile.
+- [Bilibili: 黑纹白斑马](https://space.bilibili.com/1263732318): Chinese video creator profile.
+- [X: @liuzhao_666](https://x.com/liuzhao_666): Public English-language technology updates.
+
+## Optional
+
+- [中文联系页面](https://liuzhao1225.github.io/contact/): 项目反馈与公开交流入口。
+- [中文隐私说明](https://liuzhao1225.github.io/privacy/): 静态托管、浏览器存储和外部请求说明。
+- [中文使用条款](https://liuzhao1225.github.io/terms/): 个人观点、项目许可证和第三方责任边界。

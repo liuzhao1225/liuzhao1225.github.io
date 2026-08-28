@@ -6,14 +6,25 @@ The source for [liuzhao1225.github.io](https://liuzhao1225.github.io/), the cano
 
 - `index.html`: semantic content, metadata and Schema.org entity graph
 - `en/index.html`: English profile with reciprocal `hreflang`
+- `about/`, `contact/`, `privacy/`, `terms/`: Chinese trust and identity pages
+- `en/about/`, `en/contact/`, `en/privacy/`, `en/terms/`: English trust and identity pages
+- `llms.txt`: curated machine-readable identity and project index
+- `sitemap.xml` and `robots.txt`: search and AI crawler discovery
 - `styles.css`: responsive light and dark visual system
 - `site.js`: reduced-motion-aware section reveals
 - `shader-background.js`: WebGL background renderer
+- `scripts/check-site-geo.mjs`: deterministic SEO/GEO validation used in CI
 
 ## Local preview
 
 ```bash
 python3 -m http.server 4173
+```
+
+Run the metadata and internal-link check before publishing:
+
+```bash
+node scripts/check-site-geo.mjs
 ```
 
 ## Background shader

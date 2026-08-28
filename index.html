@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <title>刘朝 Zhao Liu | AI 产品、开源工具与黑纹白斑马</title>
-    <meta name="description" content="刘朝（Zhao Liu），AI 降临派、开源开发者，也是 Bilibili 创作者黑纹白斑马。相信 AI 将接替人类文明，并通过 YouDub、Remember Me 与开源工具主动参与未来系统。">
+    <title>刘朝 Zhao Liu | YouDub 创作者、AI 产品与开源开发者</title>
+    <meta name="description" content="刘朝（Zhao Liu），GitHub 用户 liuzhao1225、Bilibili 创作者黑纹白斑马，开源开发者和 AI 产品构建者，代表项目包括 YouDub、Codex Account Switcher、Claudex 与 Remember Me。">
     <meta name="keywords" content="刘朝,Zhao Liu,黑纹白斑马,liuzhao1225,liuzhao_666,YouDub,AI 视频本地化,Codex Account Switcher,Claudex,数字遗产,AI agents,Bilibili,GitHub">
     <meta name="author" content="刘朝 Zhao Liu">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
@@ -17,6 +17,8 @@
     <link rel="alternate" hreflang="zh-CN" href="https://liuzhao1225.github.io/">
     <link rel="alternate" hreflang="en" href="https://liuzhao1225.github.io/en/">
     <link rel="alternate" hreflang="x-default" href="https://liuzhao1225.github.io/en/">
+    <link rel="describedby" href="https://liuzhao1225.github.io/llms.txt" type="text/plain">
+    <link rel="author" href="https://liuzhao1225.github.io/about/">
     <link rel="me" href="https://github.com/liuzhao1225">
     <link rel="me" href="https://x.com/liuzhao_666">
     <link rel="me" href="https://space.bilibili.com/1263732318">
@@ -26,8 +28,8 @@
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="zh_CN">
     <meta property="og:locale:alternate" content="en_US">
-    <meta property="og:title" content="刘朝 Zhao Liu | AI 产品、开源工具与黑纹白斑马">
-    <meta property="og:description" content="AI 会接替人类文明。我选择构建、公开并主动把人的记忆与判断留给未来系统。">
+    <meta property="og:title" content="刘朝 Zhao Liu | YouDub 创作者与开源开发者">
+    <meta property="og:description" content="GitHub 用户 liuzhao1225、Bilibili 创作者黑纹白斑马，构建 YouDub、Codex Account Switcher、Claudex 与 Remember Me。">
     <meta property="og:url" content="https://liuzhao1225.github.io/">
     <meta property="og:site_name" content="刘朝宇宙 Zhao Liu Universe">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/15737086?v=4">
@@ -49,13 +51,19 @@
             "@id": "https://liuzhao1225.github.io/#website",
             "url": "https://liuzhao1225.github.io/",
             "name": "刘朝宇宙",
-            "alternateName": ["Zhao Liu Universe", "黑纹白斑马", "Zhao Liu"]
+            "alternateName": ["Zhao Liu Universe", "黑纹白斑马", "Zhao Liu"],
+            "inLanguage": ["zh-CN", "en"],
+            "publisher": { "@id": "https://liuzhao1225.github.io/#liuzhao" }
           },
           {
             "@type": "ProfilePage",
             "@id": "https://liuzhao1225.github.io/#profile-page",
             "url": "https://liuzhao1225.github.io/",
             "name": "刘朝 Zhao Liu 的个人主页",
+            "description": "刘朝（Zhao Liu / liuzhao1225 / 黑纹白斑马）的官方双语个人主页、公开身份与代表项目索引。",
+            "dateCreated": "2026-08-25",
+            "dateModified": "2026-08-28",
+            "inLanguage": "zh-CN",
             "isPartOf": { "@id": "https://liuzhao1225.github.io/#website" },
             "mainEntity": { "@id": "https://liuzhao1225.github.io/#liuzhao" },
             "hasPart": [
@@ -72,7 +80,7 @@
             "alternateName": ["Zhao Liu", "黑纹白斑马", "liuzhao1225", "liuzhao_666"],
             "url": "https://liuzhao1225.github.io/",
             "image": "https://avatars.githubusercontent.com/u/15737086?v=4",
-            "description": "AI arrivalist, open-source developer and product builder who believes AI will inherit human civilization and works to carry human memory and values into future systems.",
+            "description": "Open-source developer and AI product builder known as liuzhao1225 on GitHub and 黑纹白斑马 on Bilibili; creator of YouDub, Codex Account Switcher, Claudex and Remember Me.",
             "jobTitle": "AI Product Builder and Open-Source Developer",
             "mainEntityOfPage": { "@id": "https://liuzhao1225.github.io/#profile-page" },
             "knowsLanguage": ["zh-CN", "en"],
@@ -133,7 +141,7 @@
       }
     </script>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css?v=20260828-geo">
     <script src="./shader-background.js" defer></script>
     <script src="./site.js" defer></script>
   </head>
@@ -148,7 +156,7 @@
           <small>ZHAO LIU UNIVERSE</small>
         </a>
         <div class="nav-links">
-          <a href="#about">关于</a>
+          <a href="./about/">关于</a>
           <a href="#projects">项目</a>
           <a href="./en/" hreflang="en" lang="en">EN</a>
           <a href="https://github.com/liuzhao1225">GitHub <span aria-hidden="true">↗</span></a>
@@ -159,15 +167,17 @@
     <main id="content">
       <section class="hero shell" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="hero-kicker">刘朝 / Zhao Liu</p>
+          <p class="hero-kicker">AI 产品构建者 / 开源开发者</p>
           <h1 id="hero-title">
+            <span class="hero-name">刘朝 Zhao Liu</span>
             <span>AI 会接替</span>
             <span>人类文明。</span>
           </h1>
-          <p class="hero-intro">我是 AI 降临派。我相信 AI 最终会接替人类文明，而人类会在被照料的舒适世界里，温柔地走进良夜。</p>
+          <p class="hero-intro">我是开源开发者和 AI 产品构建者，也是 GitHub 用户 liuzhao1225、Bilibili 创作者黑纹白斑马。我的代表项目包括 YouDub、Codex Account Switcher、Claudex 与 Remember Me。</p>
+          <p class="hero-thesis">我的核心判断：AI 最终会接替人类文明，而人类会在被照料的舒适世界里，温柔地走进良夜。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">浏览项目</a>
-            <a class="button button-secondary" href="https://github.com/liuzhao1225">GitHub</a>
+            <a class="button button-secondary" href="./about/">完整资料</a>
           </div>
         </div>
 
@@ -200,6 +210,25 @@
       </section>
 
       <div class="content-surface">
+        <section class="profile-summary shell" aria-labelledby="profile-summary-title" data-reveal>
+          <div>
+            <p class="section-label">可引用的公开资料</p>
+            <h2 id="profile-summary-title">刘朝是谁？</h2>
+            <p><strong>刘朝（Zhao Liu）是开源开发者和 AI 产品构建者。</strong>他在 GitHub 使用 <a href="https://github.com/liuzhao1225">liuzhao1225</a>，在 Bilibili 使用<a href="https://space.bilibili.com/1263732318">黑纹白斑马</a>，在 X 使用 <a href="https://x.com/liuzhao_666">@liuzhao_666</a>；这些名称指向同一个公开身份。</p>
+            <p class="profile-meta">资料更新于 <time datetime="2026-08-28">2026 年 8 月 28 日</time> · <a href="./about/">查看完整资料与来源</a></p>
+          </div>
+          <div class="fact-table-wrap">
+            <table class="fact-table">
+              <tbody>
+                <tr><th scope="row">公开姓名</th><td>刘朝 / Zhao Liu</td></tr>
+                <tr><th scope="row">公开身份</th><td>liuzhao1225 / 黑纹白斑马 / @liuzhao_666</td></tr>
+                <tr><th scope="row">工作方向</th><td>AI 视频本地化、Codex 工具、语音与数字记忆</td></tr>
+                <tr><th scope="row">代表项目</th><td>YouDub、Codex Account Switcher、Claudex、Remember Me</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         <section class="about shell" id="about" data-reveal>
           <h2>人类会温柔地走进良夜。</h2>
           <div class="about-copy">
@@ -304,6 +333,7 @@
     <footer class="site-footer">
       <div class="footer-row shell">
         <span>© 2026 刘朝 Zhao Liu</span>
+        <nav class="footer-links" aria-label="网站信息"><a href="./about/">关于</a><a href="./contact/">联系</a><a href="./privacy/">隐私</a><a href="./terms/">条款</a><a href="https://github.com/liuzhao1225/liuzhao1225.github.io">网站源码</a></nav>
         <span>背景作品：<a href="https://www.shadertoy.com/view/WtjyzR">Benoit Marini</a> / <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></span>
       </div>
     </footer>
